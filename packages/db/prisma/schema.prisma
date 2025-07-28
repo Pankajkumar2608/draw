@@ -15,7 +15,7 @@ datasource db {
 
 model User {
   id   String @id @default(uuid())
-  email String
+  email String  @unique
   password String
   name    String
   rooms    Room[]
@@ -23,7 +23,7 @@ model User {
 }
 model Room {
   id    Int   @id @default(autoincrement())
-  slug String?
+  slug String
   createAt DateTime @default(now())
   adminId   String
   admin User @relation(fields: [adminId], references: [id])
