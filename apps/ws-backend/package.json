@@ -12,6 +12,10 @@
     "@types/ws": "^8.18.1",
     "ws": "^8.18.3"
   },
+  "devDependencies": {
+    "@repo/backend-common": "workspace:*",
+    "@repo/db": "workspace:*"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
